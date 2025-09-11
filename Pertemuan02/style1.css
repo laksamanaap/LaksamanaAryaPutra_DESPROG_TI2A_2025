@@ -1,7 +1,8 @@
 html,
 body {
-    margin: 24;
-    padding: 24;
+    margin: 24px; 
+    padding: 24px;
+    height: 100%; 
 }
 
 body {
@@ -11,13 +12,20 @@ body {
     padding-bottom: 1000px;
 }
 
+
+
 .container-satu {
     width: 900px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
+    gap: 20px;  
+}
+
+.container-wrapper-1 {
     box-sizing: border-box;
     display: flex;
+    align-items: stretch;
 }
 
 .kolom-utama {
@@ -27,38 +35,41 @@ body {
     background-image: url('img/bunga2.jpg');
     background-size: cover;
     color: #333;
+    flex: 2; 
 }
 
 .sidebar-satu {
-    
     order: 1;
     background-color: #e6f7ff;
     padding: 15px;
+    flex: 1; 
+}
 
-    ul {
-        width: 100px;
-    }
+.sidebar-satu ul {
+    width: 100%; 
+}
 
-    h3 {
-        text-align: center;
-    }
+.sidebar-satu h3 {
+    text-align: center;
 }
 
 .sidebar-wrapper-1 {
     background-color: #fff0e6;
-    order: 3; 
-    height: 100%;
+    order: 3;
+    flex: 1; 
 }
 
 .sidebar-dua {
     padding: 15px;
-    height: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+}
 
-    p {
-        text-align: center;
-    }
+.sidebar-dua p {
+    text-align: center;
+}
 
-    h3 {
-        text-align: center;
-    }
+.sidebar-dua h3 {
+    text-align: center;
 }
